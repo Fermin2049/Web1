@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200;1,600&display=swap');
+:root{
+    --blackground: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+body{
+
+
+    font-family: 'Raleway', sans-serif;
+
+
+}
+.container{
+    width: 90%;
+    margin:0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.subtitulo{
+   color: var(--color-primary);
+   font-size: 2.5rem;
+   margin-bottom: 35px;
+}
+
+
+.hero{
+   height: 100vh;
+   background-image: var(--blackground), url(../assets/freddie-marriage-vSchPA-YA_A-unsplash.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   position: relative;
+}
+.hero .container
+
+{
+    padding: 0;
+   
+}
+
+
+.nav{
+   display: flex;
+   justify-content: flex-end;
+   height: 70px;
+   align-items: center;
+   font-weight: 700;
+}
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+}
+
+.nav--items{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+
+    
+}
+.nav--items--cta{
+ border: 1px solid #fff;
+
+}
+.nav__items--footer{
+    padding: 10px;
+}
+.hero__container {
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+    
+}
+.hero__texts{
+  width: 80%;
+  margin-bottom: 50px;   
+}
+.hero__title{
+  font-size: 3.2rem;
+
+}
+.hero__subtitulo{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+.hero__cta{
+      display: inline-block;   
+      background: #fff;
+      padding: var(--boton-padding);
+      color: var(--color-primary);
+      text-decoration: none;
+      border-radius: 40px;
+    
+
+      
+}
+
+.hero__wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+}
+
+.presentacionconteiner{
+    padding-top: 0;
+    text-align: center;
+
+
+}
+.presentcion__foto{
+ width: 150px;
+ height: 150px;
+ border-radius: 50px;
+ margin-bottom: 10px ;
+ object-fit: cover;
+ object-position: top;
+}
+.presentacion__copy{
+    width: 80%;
+    margin: 0 auto;
+}
+.presentacion__cta{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+.about{
+    min-height: 400px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+.about__img
+{
+    text-align: center;
+}
+.about__img--left 
+{ text-align: left;
+}
+.about__pinture
+{ max-width: 80%;
+
+}
+.about__parrafo{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.proyectos{
+    background: #f2f2f2;
+}
+.proyectos__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "im1 im1 im2 im3"
+    "im1 im1 im4 im5";
+    gap:10px ;
+}
+.proyectos__items{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;}
+    .proyectos__img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    
+}
+.proyectos__items:nth-of-type(1){
+    grid-area: im1;
+}
+
+.proyectos__items:nth-of-type(1){
+    grid-area: im1;
+}
+.proyectos__items:nth-of-type(2){
+    grid-area: im2;
+}
+.proyectos__items:nth-of-type(3){
+    grid-area: im3;
+}
+.proyectos__items:nth-of-type(4){
+    grid-area: im4;
+}
+.proyectos__hover
+{
+    position: absolute;
+    background: #dc143c8c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}   
+   .proyectos__items:hover .proyectos__hover
+
+{
+    transform: translateX(0%);
+}
+.proyecto__icon
+{
+    margin-top: 10px;
+    font-size: 30px;
+
+}
+.testimony__grid
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.testimony__item
+{
+    width: 95%;
+    margin: 0 auto;
+    background: var(--color-secondary);
+    box-shadow: 0 8px 10px rgba( 66, 66, 66, .5);
+    border-radius:7 px;
+    padding: 30px 25px;
+    color : #fff;
+    margin-bottom: 50px;   
+}
+.testimony__personal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.testimony__img
+{
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 30px;}
+.testymony__name 
+{   font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.testimony__cerification
+{
+    color: #E0aFA0;
+    font-weight: 700;
+}
+.testimony__review
+{ font-weight: 300;
+
+}
+.footer
+{
+    background: var(--color-primary);
+}
+.footer__grid
+{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+
+}
+.footer__title
+{
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.footer__icons
+{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.footer__container-icons
+{  
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+}
+.footer__icons
+{
+    color: inherit;
+    font-size: 30px;
+    text-decoration: none;
+    
+
+
+}
+.fab.footer__icons
+{
+    line-height: 60px;
+}
+@media screen and (max-width: 800px)  
+{
+    :root{
+        --boton-padding: 18px 40px;
+  }
+  .nav{
+    justify-content: space-around;
+  }
+  .nav--items{
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    margin-right: 0;
+
+}
+}
+.nav--items--cta
+{  border: none;
+
+   }
+   .nav__items--footer
+   {
+         border: none;
+
+}
+.hero__texts
+{ width: 100%;
+    margin-bottom: 80px;
+
+}
+.hero__title
+    
+{    font-size: 2.5rem;
+
+}
+.hero__subtitulo
+{  font-size: 1.5rem;
+
+}
+.presentacion__copy
+
+{
+    width: 100%;
+
+}
+.about
+{
+    grid-template-columns: 1fr;
+
+}
+.about__img--left
+{
+    text-align: center;
+
+}
+.hero__texts:last-child
+{
+    grid-row: 3/4;
+}
+.proyectos__grid
+  {
+    grid-template-areas: 
+    "im1 im1 im2 im2"
+    "im1 im1 im3 im3"
+    "im4 im4 im5 im5"
+
+}
+.testimony__grid
+{
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.footer__contact
+{
+    grid-row: 1/2;
+   
+}
+@media screen and (max-width:500px){
+    :root{
+         --boton--padding: 18px 35px
+    }
+    .subtitulo{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .nav{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+
+    }
+    .nav--items{
+         padding: 0 10px;
+         border: 0;
+
+    }
+    .hero__texts{
+        text-align: center;
+        margin-bottom: 100px;
+
+
+    }
+    .hero__title{
+        font-size: 2rem;
+    }
+    .presentcion__foto{
+        width: 120px;
+        height: 120px;
+
+    }
+    .about{
+        row-gap: 60px;
+
+    }
+    .about__container{
+        padding-top: 10px;
+    }
+    .proyectos__grid{
+        grid-template-areas: 
+        "im1"
+        "im2"
+        "im3"
+        "im4"
+        "im5";
+        height: auto;
+        grid-template-rows: repeat(5, 250px);
+        grid-auto-rows: 250px;
+        gap: 10px;
+    }
+    .testimony__item{
+        padding: 30px 15px;
+    }
+    .testimony__personal{
+        flex-direction: column;
+    }
+    .testimony__test
+    {
+        text-align: center;
+    }
+    .testimony__img
+    {   margin: 0;
+        margin-bottom: 20px;
+    }
+
+
+}
+    
+
+
+
+
+
